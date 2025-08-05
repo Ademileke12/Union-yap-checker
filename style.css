@@ -218,7 +218,7 @@ select{
 
 @media only screen and (max-width: 600px) {
   .ff{
-    width: 320px;
+    width: 280px;
   }
     
   input, select {
@@ -226,10 +226,10 @@ select{
   }
 
   input{
-    width: 300px;
+    width: 260px;
   }
   .calculator select{
-    width: 321px;
+    width: 282px;
   }
   
   .popup-card {
