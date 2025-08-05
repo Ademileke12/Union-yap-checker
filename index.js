@@ -42,7 +42,8 @@ function shareToTwitter() {
   const rank = document.getElementById('popup-rank').textContent.replace('RANK: ', '');
   const totalU = document.getElementById('popup-total').textContent.replace('', '');
 
-  const tweetText = `${username} | Rank: ${rank} | Total $U: ${totalU} — calculated with the YAPPERS card.\n\n chcek your yapper allocation\nhttps://yappers.xyz`;
+  const tweetText = `${username} | Rank: ${rank} | Total $U: ${totalU} — calculated with the YAPPERS card.\n\n chcek your yapper allocation\nhttps://union-yap-calculator.vercel.app/
+`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
   window.open(tweetUrl, '_blank');
