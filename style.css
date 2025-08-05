@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -18,7 +18,7 @@ html {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .content {
@@ -31,20 +31,20 @@ html {
   font-family: sans-serif;
 }
 
-header{
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
 }
 
-.union{
-    width: 150px;
+.union {
+  width: 150px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   margin-top: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .calculator select {
@@ -59,70 +59,72 @@ header{
   width: 402px;
 }
 
-option{
-    background-color: #111;
+option {
+  background-color: #111;
 }
 
-.md{
-    width: 360px
+.md {
+  width: 360px
 }
 
-.ff{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding:20px;
-    width: 400px;
-    font-weight: 500;
-    border-radius: 10px;
-    height:auto;
-}
-label{
-    margin-bottom: 8px;
+.ff {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 400px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: auto;
 }
 
-input{
-    width: 380px;
-    padding: 10px;
-    margin-bottom: 30px;
-    background-color: transparent;
-    border: 1px solid rgb(221, 217, 217,0.7);
-    border-radius: 4px;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
+label {
+  margin-bottom: 8px;
 }
 
-.btn,.btn1{
-    background-color:transparent;
-    color: whitesmoke;
-    font-size: 21px;
-    border: 1px solid #CCC;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 8px
+input {
+  width: 380px;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: 1px solid rgb(221, 217, 217, 0.7);
+  border-radius: 4px;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.btn1{
+.btn,
+.btn1 {
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 21px;
+  border: 1px solid #CCC;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 8px
+}
+
+.btn1 {
   background-color: black;
   border: 1px solid black;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
 
-a{
-   text-decoration: none; 
-   color: white;
-   text-align: center;
-   font-family: 'Courier New', Courier, monospace;
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-select{
-    margin-bottom: 10px;
+select {
+  margin-bottom: 10px;
 }
 
 .popup {
@@ -151,10 +153,11 @@ select{
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 25px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease-in-out;
 }
-.nb{
+
+.nb {
   color: whitesmoke;
   z-index: 999;
   font-size: 16px;
@@ -163,10 +166,11 @@ select{
   font-weight: 500;
 }
 
-.nb1{
+.nb1 {
   text-decoration: underline;
   font-weight: 500;
 }
+
 .popup-header,
 .popup-footer {
   display: flex;
@@ -189,7 +193,7 @@ select{
   font-size: 22px;
   color: #ccc;
   font-weight: normal;
-} 
+}
 
 .popup-close {
   font-size: 20px;
@@ -198,7 +202,7 @@ select{
 
 #popup-total {
   font-weight: bold;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
 .label {
@@ -209,29 +213,45 @@ select{
 }
 
 @keyframes fadeIn {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mad{
+  margin-top: 20px;
 }
 
 
-
-
 @media only screen and (max-width: 600px) {
-  .ff{
-    width: 280px;
-  }
-    
-  input, select {
-  font-size: 16px; /* Prevent zoom on mobile */
+
+  body.ios-device {
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
   }
 
-  input{
-    width: 260px;
+  body.ios-device .video-bg {
+    display: none;
   }
-  .calculator select{
-    width: 282px;
+
+  .ff {
+    width: 320px;
   }
-  
+
+  input {
+    width: 300px;
+  }
+
+  .calculator select {
+    width: 321px;
+  }
+
   .popup-card {
     width: 80%;
     height: auto;
@@ -271,4 +291,3 @@ select{
     font-size: 14px;
   }
 }
-

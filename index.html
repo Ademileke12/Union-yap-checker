@@ -50,9 +50,9 @@
 
                         <button class="btn1" type="button" onclick=calculate()>Calculate</button>
                         <div>
-        </div>
+                        </div>
                     </div>
-                    
+
                 </form>
 
             </div>
@@ -112,10 +112,21 @@
             </div>
         </div>
         <div>
-           <p class="nb">Note: This is all speculations the method of calculation <a class="nb1" href="https://x.com/smolgeeek/status/1952089274553192731">here</a></p>
+            <p class="nb">Note: This is all speculations the method of calculation <a class="nb1"
+                    href="https://x.com/smolgeeek/status/1952089274553192731">here</a></p>
     </main>
 
     <script src="index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+            if (isIOS) {
+                document.body.classList.add("ios-device");
+            }
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </body>
 
