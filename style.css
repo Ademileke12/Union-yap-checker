@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.union{
+    width: 150px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin-top: 10px;
+}
+
+.calculator select {
+  display: block;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  width: 402px;
+}
+
+option{
+    background-color: #111;
+}
+
+.md{
+    width: 360px
+}
+
+.ff{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:20px;
+    width: 400px;
+    font-weight: 500;
+    border-radius: 10px;
+    height:auto;
+}
+label{
+    margin-bottom: 8px;
+}
+
+input{
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(221, 217, 217,0.7);
+    border-radius: 4px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn,.btn1{
+    background-color:transparent;
+    color: whitesmoke;
+    font-size: 21px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 8px
+}
+
+.btn1{
+  background-color: black;
+  border: 1px solid black;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+a{
+   text-decoration: none; 
+   color: white;
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-card {
+  width: 400px;
+  height: 250px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 25px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+.nb{
+  color: whitesmoke;
+  z-index: 999;
+  font-size: 16px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nb1{
+  text-decoration: underline;
+  font-weight: 500;
+}
+.popup-header,
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.popup-body {
+  text-align: left;
+}
+
+.popup-body h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.popup-body h3 {
+  font-size: 22px;
+  color: #ccc;
+  font-weight: normal;
+} 
+
+.popup-close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#popup-total {
+  font-weight: bold;
+  font-size: 16px;  
+}
+
+.label {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .ff{
+    width: 320px;
+  }
+
+  input{
+    width: 300px;
+  }
+  .calculator select{
+    width: 321px;
+  }
+  
+  .popup-card {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .popup-header,
+  .popup-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .popup-close {
+    align-self: flex-end;
+  }
+
+  .popup-body h2 {
+    font-size: 20px;
+  }
+
+  .popup-body h3 {
+    font-size: 16px;
+  }
+
+  #popup-total {
+    font-size: 14px;
+  }
+
+  .popup-footer .label {
+    font-size: 13px;
+  }
+
+  #twitter-share-btn {
+    margin-top: 12px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+

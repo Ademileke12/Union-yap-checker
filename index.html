@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Union-yap-calculator</title>
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="mad-yaps-v3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <main>
+        <header>
+            <div class="logo">
+                <img src="union-logo.svg" alt="" class="union" />
+            </div>
+        </header>
+
+        <div class="container">
+            <div>
+                <p class="nb">Created by: <a class="nb1" href="https://x.com/anakincoco">Anakincoco</a></p>
+            </div>
+            <div class="mad">
+                <img src="mad.png" alt="" class="md" />
+            </div>
+
+            <div class="calculator">
+                <form id="calculator-form">
+                    <div class="ff">
+                        <label for="season">Select Season:</label>
+                        <select id="season" name="season">
+                            <option value="season0">Season 0</option>
+                            <option value="season1">Season 1</option>
+                        </select>
+
+                        <label for="username">Enter your X username</label>
+                        <input type="text" id="username" placeholder="@" required />
+
+                        <label for="mindshare">Enter your Mindshare</label>
+                        <input type="text" id="mindshare" placeholder="0.1?" required />
+
+                        <label for="ranking">Enter your X ranking</label>
+                        <input type="number" id="ranking" placeholder="ranking" />
+
+                        <button class="btn1" type="button" onclick=calculate()>Calculate</button>
+                        <div>
+        </div>
+                    </div>
+                    
+                </form>
+
+            </div>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-card">
+                <div class="popup-header">
+                    <span id="popup-rank">RANK: </span>
+                    <span class="popup-close" onclick="closePopup()">ㄨ</span>
+                </div>
+                <div class="popup-body">
+                    <h2 id="popup-username">USERNAME</h2>
+                    <h3>U–YAPPER</h3>
+                </div>
+                <div class="popup-footer">
+                    <span id="popup-total">TOTAL$U</span>
+                    <span class="label">YAPPERS CARD</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                    <button id="twitter-share-btn" class="btn" onclick="shareToTwitter()">Share to Twitter</button>
+                    <button id="download-btn" class="btn" onclick="downloadCard()">Download Card</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="screenshot-card" style="display:none; position:absolute; top:0; left:0;">
+            <div style="
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    background-image: radial-gradient(circle at top left, #007cf0, #00dfd8, #ff0080, #7928ca);
+    background-size: cover;
+    background-position: center;
+  ">
+                <div style="font-size: 14px; font-weight: 500;"> <span id="sc-rank">679</span></div>
+                <div style="font-size: 28px; font-weight: 900; margin-top: 10px;" id="sc-username">anakincoco</div>
+                <div style="font-size: 18px; font-weight: 500; letter-spacing: 2px;" id="sc-type">U–YAPPER</div>
+
+                <div style="position: absolute; bottom: 20px; left: 20px; font-size: 14px; font-weight: 600;">
+                    TOTAL $U: <span id="sc-total">11,700</span>
+                </div>
+
+                <div style="position: absolute; bottom: 20px; right: 20px; font-size: 12px; font-weight: 400;">
+                    YAPPERS CARD
+                </div>
+
+                <div style="position: absolute; top: 20px; right: 20px; font-size: 20px;">↗</div>
+            </div>
+        </div>
+        <div>
+           <p class="nb">Note: This is all speculations the method of calculation <a class="nb1" href="https://x.com/smolgeeek/status/1952089274553192731">here</a></p>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</body>
+
+</html>
