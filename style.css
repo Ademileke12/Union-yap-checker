@@ -170,6 +170,7 @@ select {
   text-decoration: underline;
   font-weight: 500;
   color:yellow;
+  width:90%;
 }
 
 .popup-header,
