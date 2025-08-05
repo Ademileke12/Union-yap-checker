@@ -158,7 +158,7 @@ select {
 }
 
 .nb {
-  color: yellow;
+  color: whutesmoke;
   z-index: 999;
   font-size: 16px;
   margin-top: 5px;
@@ -169,6 +169,7 @@ select {
 .nb1 {
   text-decoration: underline;
   font-weight: 500;
+  color:yellow;
 }
 
 .popup-header,
