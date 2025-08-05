@@ -220,6 +220,10 @@ select{
   .ff{
     width: 320px;
   }
+    
+  input, select {
+  font-size: 16px; /* Prevent zoom on mobile */
+  }
 
   input{
     width: 300px;
